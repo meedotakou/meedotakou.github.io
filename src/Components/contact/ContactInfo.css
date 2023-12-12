@@ -1,0 +1,31 @@
+.ContactInfo{
+
+    border-radius: 10px;
+    padding:0.4em 1em;
+}
+.ContactInfo h1{
+    text-align: center;
+    font-weight: 400;
+}
+.ContactInfo .itemInfo{
+    
+}
+.ContactInfo .itemInfo .itemI{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+@media (min-width:361px) {
+.ContactInfo{
+    width:70%;
+    margin: auto;
+}
+    
+}
+
+@media (min-width:1024px) {
+    .ContactInfo{
+        width:40%;
+    }
+}

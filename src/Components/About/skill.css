@@ -1,0 +1,26 @@
+.skills .HeaderSkills {
+    text-align: center;
+}
+.skills .HeaderSkills h1{
+    font-weight: 400;
+    font-size: 2.6em;
+    margin-bottom: 1.5em;
+}
+.skills .HeaderSkills h1 span{
+    color: var(--secound-color);
+}
+.skills .ItemSkills{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+@media (min-width:550px) {
+    .skills .ItemSkills{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+}

@@ -1,0 +1,56 @@
+.Form{
+    width: 80%;
+    margin: auto;
+}
+.Form .titleContacts{
+    font-size:1.6em;
+    font-weight: 400;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.Form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1em;
+}
+
+.Form form input,.Form form textarea{
+    background-color: var(--background-menu-color);
+    border:none;
+    padding:.6em .4em;
+    color:var(--color-text);
+    font-size: 1.1em;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.Form form button{
+    background-color: var(--secound-color);
+    padding:.5em .3em;
+    font-weight: 500;
+    font-size: 1.4em;
+    display: inline-block;
+    border:none;
+    width: 100px;
+    border-radius: 10px;
+    margin: auto;
+}
+@media (min-width:1024px) {
+    .Form{
+        width: 40%;
+        margin: auto;
+    }
+    .Form .titleContacts{
+            padding:0;
+            margin-bottom: 2em;;
+    }
+.Form form{
+gap:2em;
+}
+.Form form input,.Form form textarea{
+    padding:2em 2em;
+}
+
+}

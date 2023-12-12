@@ -1,0 +1,107 @@
+.MenuHeader{
+    
+    position: absolute;
+    width:100%;
+    height: 0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: .4s all;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+.MenuShow{
+    height: 100vh;
+    max-height: 100vh;
+}
+#Menu{
+    background-color: var(--background-menu-color);
+    position: relative;
+    padding:1em 0;
+}
+#Menu::after{
+    content: attr(data-test-id);
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    font-size:8em;
+    z-index: 2;
+    letter-spacing: 60px;
+    transition: 0.4s all;
+    font-family: 'Montoro';
+    opacity: 0;
+}
+#Menu.hover::after{
+    color:var(--primary-color);
+    letter-spacing: 0;
+    opacity: .5;
+}
+
+
+#Menu .MenuClass{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+}
+#Menu .MenuClass .MenuHeaderLogo,
+#Menu .MenuClass .closeButton{
+    position: absolute;
+    top:9px;
+}
+#Menu .MenuClass .MenuHeaderLogo{
+    left:10px;
+}
+#Menu .MenuClass .closeButton{
+    right:10px;
+    transition: .4s transform;
+    transform: rotate(-90deg);
+}
+#Menu .MenuClass .closeButton:hover{
+    transform: rotate(0);
+}
+
+#Menu .MenuClass .closeButton div{
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+
+#Menu .MenuClass .closeButton span{
+    width:40px;
+    height: 2px;
+    background-color: var(--primary-color);
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top:50%;
+}
+#Menu .MenuClass .closeButton span:nth-child(1){
+    transform: translate(-50%,-35%) rotate(45deg);
+}
+#Menu .MenuClass .closeButton span:nth-child(2){
+    transform: translate(-35%,-50%) rotate(-45deg);
+}
+
+
+
+#Menu .MenuClass nav ul li{
+    text-align: center;
+    margin:.6em 0;
+}
+#Menu .MenuClass nav ul li a{
+    color:var(--primary-color);
+    font-size: 2.4em;
+    text-transform: uppercase;
+}
+
+
+
+
+

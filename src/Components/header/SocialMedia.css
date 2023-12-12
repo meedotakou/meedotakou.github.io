@@ -1,0 +1,44 @@
+#SocialMedia{
+    position: absolute;
+    bottom:1%;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    z-index: 40;
+}
+#SocialMedia ul{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+#SocialMedia ul li{
+    padding:0 .6em ;
+}
+#SocialMedia ul li svg{
+    fill: var(--primary-color);
+    width: 25px;
+    transition: 0.4s transform;
+}
+
+#SocialMedia ul li:hover svg{
+    transform: scale(1.2);
+    fill:var(--secound-color);
+}
+
+
+@media (min-width:1030px) {
+    #SocialMedia{
+        left:4%;
+        top:50%;
+        transform: translateY(-50%);
+        bottom: auto;
+        width: auto;
+        height: auto;
+    }
+    #SocialMedia ul{
+        flex-direction: column;
+    }
+
+    
+}

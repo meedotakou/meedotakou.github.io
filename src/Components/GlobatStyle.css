@@ -1,0 +1,11 @@
+.HeaderComponent{
+    text-align: center;
+}
+.HeaderComponent h1{
+    color:var(--primary-color);
+    font-weight:400;
+    font-size:2.6em;
+}
+.HeaderComponent h1 span{
+    color:var(--secound-color);
+}

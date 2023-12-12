@@ -1,0 +1,34 @@
+.skil{
+    margin:1em 0;
+    width: 100%;
+}
+.skil h4{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: .6em;
+}
+.skil .progress{
+    background-color:var(--color-box) ;
+    width:100%;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: .2em;
+}
+.skil .progress span{
+    vertical-align: middle;
+    display: block;
+    background-color: var(--secound-color);
+    border-radius: 10px;
+    padding: 0.1em;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+@media (min-width:550px) {
+        .skil {
+
+            width:45%;
+        }
+}

@@ -1,0 +1,22 @@
+.NameInfoSection{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.NameInfoSection .FullName{
+    color: var(--primary-color);
+    font-size: 2.4em;
+}
+
+.NameInfoSection .name{
+    color:var(--secound-color)
+}
+.NameInfoSection h5 strong{
+    font-size: 2.4em;
+    color: var(--primary-color);
+
+}

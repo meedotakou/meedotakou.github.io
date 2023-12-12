@@ -1,0 +1,19 @@
+#contact{
+    background-color: var(--backgournd-color);
+    min-height: 100vh;
+    padding:2em 0;
+
+}
+.contactFields{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 2em;
+}
+@media (min-width:1024px) 
+{
+    .contactFields{
+        flex-direction: row;
+
+    }
+}

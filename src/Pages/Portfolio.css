@@ -1,0 +1,10 @@
+#Portfolio{
+    width: 100%;
+    background-color:var(--backgournd-color);
+    padding:2em 0;
+}
+@media (min-width:1026px) {
+        #Portfolio{
+            padding: 4em 0;
+        }
+}
